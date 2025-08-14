@@ -1,0 +1,194 @@
+:root {
+    --color-primary: #00a1ff;
+    --color: #00aeff;
+    --color-secundary: #000000;
+    --background-color: #ffffff;
+    --color-text: #000000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.container {
+    margin: 36px 120px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu-desktop {
+    display: none;
+}
+
+header div.logo {
+    width: 90px;
+}
+
+header div.menu-mobile {
+    width: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    margin-top: 180px;
+}
+
+section .banner {
+    display: flex;
+    justify-content: center;
+}
+
+section .banner img {
+    max-width: 20vw;
+}
+
+
+section .banner {
+    animation: show 0.8s ease-out forwards;
+}
+
+@keyframes show {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+main .title {
+    font-size: 18px;
+    margin: 18px 0px;
+}
+
+
+main .banner-details {
+    margin-bottom: 22px;
+    padding: 36px 2px 22px 8px;
+    box-shadow: 2px 1px 3px #91c4e1;
+
+}
+
+main .banner-details .banner-info {
+    display: flex;
+    flex-direction: column;
+}
+
+main .banner-details .banner-title {
+    text-align: center;
+    color: var(--color-primary);
+}
+
+main .banner-info .banner-image {
+    width: 160px;
+    margin: 12px auto;
+}
+
+main .banner-info .banner-desc {
+    text-justify: auto;
+    text-align: left;
+}
+
+
+
+footer {
+    margin: 48px 0px;
+    padding: 48px 0px;
+
+    background-image: linear-gradient(to top, #00a1ff, #ffffff);
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.media{
+    display: flex;
+    margin: 6px 2px;
+}
+
+.media .media-title {
+    display: none;
+}
+
+.media .media-logo {
+    width: 40px;
+}
+
+/* Se a janela do navegador tiver 426 ou menos*/
+@media only screen and (max-width: 426px) {
+
+    .container {
+        margin: 16px;
+        padding: 2px;
+    }
+
+    main {
+        margin-top: 120px;
+    }
+
+
+    /*main .container {
+        margin: 16px;
+    }*/
+
+    section .banner img {
+        max-width: 50vw;
+    }
+}
+
+
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+
+    header .container {
+        margin: 28px;
+        padding: 2px;
+    }
+
+    header div.logo {
+        width: 180px;
+    }
+
+    header div.menu-mobile {
+        width: 40px;
+    }
+
+    main {
+        margin-top: 220px;
+    }
+
+    section .container {
+        margin: 0px 12px;
+    }
+
+    section .banner img {
+        max-width: 40vw;
+    }
+}
