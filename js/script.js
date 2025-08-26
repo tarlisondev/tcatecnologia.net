@@ -32,8 +32,7 @@ const requestPost = async (route = '', method = '', data = '') => {
     body: JSON.stringify(data)
   });
 
-  const response = await request.json();
-  console.log(response);
+  return alert('Tudo certo: Solicitação enviada!')
 }
 
 menuBtn.addEventListener('click', (e) => {
