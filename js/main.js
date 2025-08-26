@@ -9,20 +9,11 @@ const contact = document.getElementById('contact');
 const description = document.getElementById('description');
 const button = document.getElementById('button');
 
-const requestGet = async (route = '', method = '') => {
-  const request = await fetch(`http://localhost:4000${route}`, {
-    method,
-    headers: { 'Content-Type': 'application/json' },
-  });
-
-  const response = await request.json();
-  console.log(response)
-}
-
 button.addEventListener('click', async (even) => {
   even.preventDefault();
 
-  if (!enterprise.value || !responsible.value || !contact.value || !description.value) return alert('Fields required *')
+  if (!enterprise.value || !responsible.value || !contact.value || !description.value) 
+    return alert('Alls Fields are required *')
 
   const data = {
     enterprise: enterprise.value,
@@ -33,10 +24,10 @@ button.addEventListener('click', async (even) => {
 
   await requestPost('/create/called', 'POST', data);
 
-  enterprise.value = ""
-  responsible.value = ""
-  contact.value = ""
-  description.value = ""
+  enterprise.value = "";
+  responsible.value = "";
+  contact.value = "";
+  description.value = "";
 
 })
 
@@ -71,23 +62,6 @@ function validPhone(fone) {
   return onlyNumbers.replace(
     /^(\d{2})(\d{5})(\d{4})$/, "+55 ($1) $2-$3"
   );
-}
-
-// Method for show pages 
-function openPage(x, y) {
-  let indice = x;
-  let target = y;
-  let url = `pages/${indice}.html`;
-  const xml = new XMLHttpRequest();
-
-  xml.onreadystatechange = () => {
-    if (xml.readyState == 4 && xml.status == 200) {
-      document.getElementById(target).innerHTML = xml.responseText
-    }
-  }
-
-  xml.open('GET', url, true);
-  xml.send();
 }
 
 // Method of Menu

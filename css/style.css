@@ -151,12 +151,14 @@ main .banner-info .banner-desc {
 }
 
 .button{
-    background-color: rgb(88, 165, 216);
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .button:active{
-    background: #9accec;
+    background: blue;
 }
 
 footer {
