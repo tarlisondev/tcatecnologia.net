@@ -33,6 +33,11 @@ button.addEventListener('click', async (even) => {
 
   await requestPost('/create/called', 'POST', data);
 
+  enterprise.value = ""
+  responsible.value = ""
+  validPhone(contact.value) = ""
+  description.value = ""
+
 })
 
 const requestPost = async (route = '', method = '', data = '') => {
