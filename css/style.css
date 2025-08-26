@@ -1,8 +1,5 @@
 .container {
     margin: 36px 120px;
-}
-
-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +15,7 @@ header div.menu-mobile {
 
 /*------------------------------------------*/
 
-.menu-btn {
+header .menu-btn {
     width: 40px;
     height: 25px;
     display: flex;
@@ -31,7 +28,7 @@ header div.menu-mobile {
     right: 30px;
 }
 
-.menu-btn span {
+header .menu-btn span {
     display: none;
     /*block*/
     height: 4px;
@@ -74,6 +71,7 @@ header div.menu-mobile {
     color: var(--color-primary);
     text-decoration: none;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .menu-items.show {
@@ -198,22 +196,22 @@ footer {
         margin: 16px;
         padding: 2px;
     }
-
+              
     header div.logo {
         width: 80px;
     }
 
-    .menu-btn {
-        top: 50px;
+    header .menu-btn {
+        top: 26px;
     }
 
-    .menu-btn span {
+    header .menu-btn span {
         display: block;
         z-index: 1;
         background-color: #00a1ff;
     }
 
-    .menu-items {
+    header .menu-items {
         position: fixed;
         top: 0;
         right: -200px;
@@ -224,7 +222,7 @@ footer {
         padding-top: 60px;
     }
 
-    .menu-items ul {
+    header .menu-items ul {
         display: block;
     }
 
@@ -241,7 +239,7 @@ footer {
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
 
-    header .container {
+    .container {
         margin: 28px;
         padding: 2px;
     }
@@ -250,17 +248,17 @@ footer {
         width: 100px;
     }
 
-    .menu-btn {
-        top: 65px;
+    header .menu-btn {
+        top: 40px;
     }
 
-    .menu-btn span {
+    header .menu-btn span {
         display: block;
         z-index: 1;
         background-color: #00a1ff;
     }
 
-    .menu-items {
+    header .menu-items {
         position: fixed;
         top: 0;
         right: -300px;
@@ -272,7 +270,7 @@ footer {
 
     }
 
-    .menu-items ul {
+    header .menu-items ul {
         display: block;
     }
 
