@@ -33,7 +33,7 @@ button.addEventListener('click', async (even) => {
 
 const requestPost = async (route = '', method = '', data = '') => {
   await fetch(`http://localhost:4000${route}`, {
-    method,
+    method: method,
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data)
   });
