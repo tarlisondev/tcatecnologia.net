@@ -38,43 +38,43 @@ header .menu-btn span {
 }
 
 /*Animação para virar X*/
-.menu-btn.active span:nth-child(1) {
+header .menu-btn.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
 
-.menu-btn.active span:nth-child(2) {
+header .menu-btn.active span:nth-child(2) {
     opacity: 0;
 }
 
-.menu-btn.active span:nth-child(3) {
+header .menu-btn.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
 
-.menu-items {
+header .menu-items {
     width: auto;
     transition: right 0.3s;
 }
 
-.menu-items ul {
+header .menu-items ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.menu-items ul li {
+header .menu-items ul li {
     margin: 18px 16px;
 }
 
-.menu-items ul li a {
+header .menu-items ul li a {
     color: var(--color-primary);
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
 }
 
-.menu-items.show {
+header .menu-items.show {
     right: 0;
 }
 
@@ -153,7 +153,6 @@ main .banner-info .banner-desc {
 footer {
     margin: 48px 0px;
     padding: 48px 0px;
-
     background-image: linear-gradient(to top, #00a1ff, #ffffff);
 }
 
@@ -196,7 +195,7 @@ footer {
         margin: 16px;
         padding: 2px;
     }
-              
+
     header div.logo {
         width: 80px;
     }
@@ -232,6 +231,24 @@ footer {
 
     section .banner img {
         max-width: 50vw;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .container .social {
+        margin: 10px 0px 20px 0px;
+    }
+
+    footer .media {
+        margin: 0px 8px;
+        cursor: pointer;
+    }
+
+    footer p {
+        text-align: center;
     }
 }
 
@@ -285,12 +302,31 @@ footer {
     section .banner img {
         max-width: 40vw;
     }
+
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .container .social {
+        margin: 10px 0px 20px 0px;
+    }
+
+    footer .media {
+        margin: 0px 8px;
+        cursor: pointer;
+    }
+
+    footer p {
+        text-align: center;
+    }
 }
 
 
 /*Icone suspenso do whataapp*/
 
-.contact-whatsapp{
+.contact-whatsapp {
     z-index: 1;
     position: fixed;
     top: 650px;
@@ -299,12 +335,12 @@ footer {
     cursor: pointer;
 }
 
-.contact-whatsapp img:hover{
+.contact-whatsapp img:hover {
     border-radius: 50%;
     transform: scale(1.1);
     transition: 0.6s;
 }
 
-.contact-whatsapp img{
+.contact-whatsapp img {
     transition: 0.6s;
 }
