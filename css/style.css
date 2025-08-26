@@ -150,6 +150,15 @@ main .banner-info .banner-desc {
     text-align: left;
 }
 
+.button{
+    background-color: rgb(88, 165, 216);
+    cursor: pointer;
+}
+
+.button:active{
+    background: #9accec;
+}
+
 footer {
     margin: 48px 0px;
     padding: 48px 0px;

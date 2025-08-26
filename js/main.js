@@ -35,7 +35,7 @@ button.addEventListener('click', async (even) => {
 
   enterprise.value = ""
   responsible.value = ""
-  validPhone(contact.value) = ""
+  contact.value = ""
   description.value = ""
 
 })
