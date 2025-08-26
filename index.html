@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-Br">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
     <title>TCA TECNOLOGIA</title>
 </head>
 
-<body>
+<body id="body">
 
     <header>
         <div class="container">
@@ -161,38 +161,37 @@
                     <h2>Atendimento</h2>
                 </div>
 
-                <div class="called">
-                    <form action="">
+                <div id="form" class="called called-item">
 
-                        <div class="enterprise called-item">
-                            <label for="">Cliente: </label>
-                            <input type="text">
-                        </div>
+                    <div class="enterprise">
+                        <label>Empresa*: </label>
+                        <input type="text" id="enterprise">
+                    </div>
 
-                        <div class="responsible called-item">
-                            <label for="">Solicitante: </label>
-                            <input type="text">
-                        </div>
+                    <div class="responsible">
+                        <label>Solicitante*: </label>
+                        <input type="text" id="responsible">
+                    </div>
 
-                        <div class="contact called-item">
-                            <label for="">Contato:</label>
-                            <input type="text">
-                        </div>
+                    <div class="contact">
+                        <label>Contato*:</label>
+                        <input type="text" id="contact" placeholder="(00) 00000-0000">
+                    </div>
 
-                        <div class="description called-item">
-                            <label for="">Descrição: </label>
-                            <textarea name="" id=""></textarea>
-                        </div>
+                    <div class="description">
+                        <label>Descrição*: </label>
+                        <textarea id="description"></textarea>
+                    </div>
 
-                        <button>Enviar solicitação</button>
-
-                    </form>
+                    <button id="button">Enviar</button>
                 </div>
             </section>
         </div>
 
         <div class="contact-whatsapp">
-            <a target="_blank" href="https://api.whatsapp.com/send/?phone=5598974007013&text&type=phone_number&app_absent=0"><img src="./icons/whatsapp.png" alt="whatsaap"></a>
+            <a target="_blank"
+                href="https://api.whatsapp.com/send/?phone=5598974007013&text&type=phone_number&app_absent=0"><img
+                    src="./icons/whatsapp.png" alt="whatsaap"></a>
         </div>
 
     </main>

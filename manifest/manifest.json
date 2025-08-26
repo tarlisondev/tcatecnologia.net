@@ -1,6 +1,6 @@
 {
     "theme_color": "#ffffff",
-    "background_color": "#00a1ff",
+    "background_color": "#ffffff",
     "icons": [
         {
             "purpose": "maskable",
@@ -21,6 +21,6 @@
     "lang": "pt-BR",
     "name": "Tca Tecnologia",
     "short_name": "Tca Tecnologia",
-    "start_url": "http://localhost:4000/",
-    "scope": "http://localhost:4000/"
+    "start_url": "https://tarlisondev.github.io/TcaTecnologia/",
+    "scope": "https://tarlisondev.github.io/TcaTecnologia/"
 }
